@@ -12,8 +12,8 @@ A PHP library to create or delete sub domain in your own application.
 
 Sample code  
 
-`$domain = new PHPSubDomain('CPANEL_USERNAME', 'CPANEL_PASSWORD', 'YOUR_DOMAIN', 'SUB_DOMAIN_NAME', 'x3', 'public_html/MY_LOCATION', 2082)`;
+`$domain = new PHPSubDomain('CPANEL_USERNAME', 'CPANEL_PASSWORD', 'example.com', 'test321', 'x3', 'public_html/test321', 2082)`;
 
-3. To create a sub domain, run `$domain->create()`
+3. To create a sub domain, run `$domain->create()`. After a successful request, `test321.example.com` will be created.
 
-4. To delete a sub domain, run `$domain->delete()`
+4. To delete a sub domain, run `$domain->delete()`. After a successful request, `test321.example.com` will be deleted.
